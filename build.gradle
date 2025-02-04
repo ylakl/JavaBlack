@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+
+}
+
+group 'Test'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compileOnly 'org.projectlombok:lombok:1.18.8'
+    annotationProcessor 'org.projectlombok:lombok:1.18.8'
+    compileOnly 'io.projectreactor:reactor-core:3.4.19'
+
+
+
+}
