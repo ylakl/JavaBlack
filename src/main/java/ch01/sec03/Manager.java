@@ -5,7 +5,7 @@ public class Manager extends Employee {
 
     public Manager(String name, double salary) {
         super( salary, name);
-        bonus = 100;
+        bonus = 200;
     }
 
     public void setBonus(double bonus) {
